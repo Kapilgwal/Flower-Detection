@@ -2,6 +2,7 @@ import streamlit as st
 import pickle
 import numpy as np
 import re
+import sklearn
 
 pipe = pickle.load(open('flower.pkl','rb'))
 df = pickle.load(open('df.pkl','rb'))
