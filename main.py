@@ -2,8 +2,8 @@ import streamlit as st
 import pickle
 import numpy as np
 
-pipe = pickle.load(open('flower.pkl','rb'))
-df = pickle.load(open('df.pkl','rb'))
+pipe = pickle.load(open('flower.pkl','rb')).load()
+df = pickle.load(open('df.pkl','rb')).load()
 
 st.title("Flower Prediction")
 
