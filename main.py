@@ -1,11 +1,6 @@
 import streamlit as st
 import pickle
 import numpy as np
-from streamlit_lottie import st_lottie
-
-with st.echo():
-    st_lottie("https://assets5.lottiefiles.com/packages/lf20_V9t630.json")
-
 
 pipe = pickle.load(open('flower.pkl','rb'))
 df = pickle.load(open('df.pkl','rb'))
